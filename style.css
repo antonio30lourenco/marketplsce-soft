@@ -81,7 +81,8 @@ nav ul.menu li a:hover {
     align-items: center;
     text-align: center; 
     overflow: hidden;
-    background: linear-gradient(135deg, #27ae60, #2d9cdb);
+    background-image: linear-gradient(to left, #27ae60, #2d9cdb);
+    /*background: linear-gradient(135deg, #27ae60, #2d9cdb);*/
 }
 
 .slide {
