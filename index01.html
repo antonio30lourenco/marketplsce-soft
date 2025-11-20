@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vagas de Empregos</title>
+    <title>Concursos Públicos</title>
     <link rel="shortcut icon" href="marketplacesoft.io.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
@@ -11,6 +11,7 @@
     </style>
 </head>
 <body>
+
     <header>
     <div class="container">
         <div class="logo">
@@ -28,70 +29,81 @@
         </nav>
     </div>
 </header>
-<main>
- <section class="vagas-hero">
-    <h1>Vagas de Emprego em Angola</h1>
-    <p>Encontre as melhores oportunidades profissionais atualizadas diariamente.</p>
+
+    <section class="concursos-hero">
+    <h1>Concursos Públicos em Angola</h1>
+    <p>Encontre aqui os concursos mais recentes, atualizados e confiáveis.</p>
 
     <div class="search-container">
-        <input type="text" placeholder="Pesquisar vaga por cargo, empresa ou província..." class="search-input">
+        <input type="text" placeholder="Pesquisar concurso por província ou instituição..." class="search-input">
         <button class="search-btn">Pesquisar</button>
     </div>
 </section>
 
-<section class="filtros-vagas">
+<section class="filtros">
     <select>
         <option>Província</option>
         <option>Luanda</option>
         <option>Benguela</option>
         <option>Huíla</option>
+        <option>Huambo</option>
+        <option>Namibe</option>
+        <option>Bié</option>
+        <option>Cunene</option>
+        <option>Cabinda</option>
+        <option>Malanje</option>
+        <option>Uíge</option>
+        <option>Zaire</option>
+        <option>Bengo</option>
+        <option>Moxico</option>
+        <option>Cuando</option>
+        <option>Cubango</option>
+        <option>Cuanza Norte</option>
+        <option>Cuanza Sul</option>
+        <option>Lunda Norte</option>
+        <option>Lunda Sul</option>
+        <option>Icolo e Bengo</option>
+        <option>Moxico Leste</option>
+
     </select>
 
     <select>
-        <option>Área Profissional</option>
-        <option>Administração</option>
-        <option>Informática</option>
-        <option>Contabilidade</option>
+        <option>Categoria</option>
+        <option>9ª Classe</option>
+        <option>Técnico Médio</option>
+        <option>Técnico Superior</option>
+        <option>Auxiliar</option>
     </select>
 
     <select>
-        <option>Tipo de Contrato</option>
-        <option>Tempo Integral</option>
-        <option>Parcial</option>
-        <option>Estágio</option>
+        <option>Estado</option>
+        <option>Aberto</option>
+        <option>Encerrado</option>
+        <option>Em Análise</option>
+        <option>Resultados</option>
     </select>
 
     <button class="btn-filtrar">Filtrar</button>
 </section>
 
-<section class="vagas-lista">
+<section class="concursos-lista">
 
-    <div class="vaga-card">
-        <h3>Assistente Administrativo</h3>
-        <p><strong>Empresa:</strong> SONILS</p>
-        <p><strong>Local:</strong> Luanda</p>
-        <p><strong>Tipo:</strong> Tempo Integral</p>
+    <div class="card-concurso">
+        <h3>Concurso Público da PGR 2025</h3>
+        <p><strong>Província:</strong> Luanda</p>
+        <p><strong>Vagas:</strong> 350</p>
+        <p><strong>Estado:</strong> Aberto</p>
 
-        <div class="etiquetas">
-            <span class="etq full">Full-time</span>
-            <span class="etq presencial">Presencial</span>
-        </div>
-
-        <a href="#" class="btn-ver-vaga">Ver Detalhes</a>
+        <a href="#" class="btn-ver-detalhes">Ver Detalhes</a>
     </div>
 
-    <div class="vaga-card">
-        <h3>Técnico de Informática</h3>
-        <p><strong>Empresa:</strong> UNITEL</p>
-        <p><strong>Local:</strong> Luanda</p>
-        <p><strong>Tipo:</strong> Estágio</p>
+    <div class="card-concurso">
+        <h3>Concurso da AIPEX - Auxiliar Administrativo</h3>
+        <p><strong>Província:</strong> Luanda</p>
+        <p><strong>Vagas:</strong> 50</p>
+        <p><strong>Estado:</strong> Encerrado</p>
 
-        <div class="etiquetas">
-            <span class="etq estagio">Estágio</span>
-            <span class="etq presencial">Presencial</span>
-        </div>
-
-        <a href="#" class="btn-ver-vaga">Ver Detalhes</a>
+        <a href="#" class="btn-ver-detalhes encerrado">Encerrado</a>
     </div>
 
 </section>
@@ -115,7 +127,7 @@
             </form>
             <p>Ou entre em contato pelo WhatsApp: <a href="https://wa.me/244932407503" target="_blank">+244 932 407 503</a></p>
         </div>
-</section>
+    </section>
 
 <footer>
     <div class="container">
@@ -128,14 +140,17 @@
         <p>Contato: <a href="mailto:marketiplacesoft@gmail.com">marketiplacesoft@gmail.com</a></p>
     </div>
 </footer>
-</main>
+
+
 <script>
+    
     const toggle = document.querySelector('.menu-toggle');
     const menu = document.querySelector('.menu');
 
     toggle.addEventListener('click', () => {
         menu.classList.toggle('active');
     });
+
 </script>
 
 </body>
